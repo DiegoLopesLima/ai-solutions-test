@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
+    '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
     'nuxt-icon',
@@ -12,4 +13,7 @@ export default defineNuxtConfig({
   pinia: {
     autoImports: ['defineStore', 'acceptHMRUpdate'],
   },
+  i18n: {
+    vueI18n: './i18n/i18n.config.ts'
+  }
 });

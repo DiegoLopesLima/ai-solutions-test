@@ -1,0 +1,13 @@
+{
+  "app": {
+    "title": "Hello world!",
+    "counter": {
+      "title": "Counter",
+      "value": "Value:",
+      "button": {
+        "increment": "Increment",
+        "decrement": "Decrement"
+      }
+    }
+  }
+}

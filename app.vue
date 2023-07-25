@@ -1,23 +1,23 @@
 <template>
   <div class="bg-red-500">
-    Hello world! <Icon name="mdi:github" />
+    {{ $t("app.title") }} <Icon name="mdi:github" />
 
     <section>
-      <h2>Counter</h2>
+      <h2>{{ $t("app.counter.title") }}</h2>
 
-      <div>Value: {{ counter.value }}</div>
+      <div>{{ $t("app.counter.value") }} {{ counter.value }}</div>
 
       <div>
         <button type="button" @click="counter.decrement()">
           <Icon name="mdi:minus" />
 
-          Decrement
+          {{ $t("app.counter.button.decrement") }}
         </button>
 
         <button type="button" @click="counter.increment()">
           <Icon name="uil:plus" />
 
-          Increment
+          {{ $t("app.counter.button.increment") }}
         </button>
       </div>
     </section>
