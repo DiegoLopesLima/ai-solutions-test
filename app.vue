@@ -1,6 +1,6 @@
 <template>
   <div class="bg-red-500">
-    Hello world!
+    Hello world! <Icon name="mdi:github" />
 
     <section>
       <h2>Counter</h2>
@@ -8,9 +8,17 @@
       <div>Value: {{ counter.value }}</div>
 
       <div>
-        <button type="button" @click="counter.increment()">Increment</button>
+        <button type="button" @click="counter.decrement()">
+          <Icon name="mdi:minus" />
 
-        <button type="button" @click="counter.decrement()">Decrement</button>
+          Decrement
+        </button>
+
+        <button type="button" @click="counter.increment()">
+          <Icon name="uil:plus" />
+
+          Increment
+        </button>
       </div>
     </section>
   </div>
