@@ -3,9 +3,9 @@ import ptBR from "./locales/pt-BR.json";
 
 export default defineI18nConfig(() => ({
   legacy: false,
-  locale: 'pt-BR',
-  messages:  {
-    'en-US': enUS,
-    'pt-BR': ptBR,
+  locale: "pt-BR",
+  messages: {
+    "en-US": enUS,
+    "pt-BR": ptBR,
   },
 }));

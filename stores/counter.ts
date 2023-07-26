@@ -1,9 +1,9 @@
-export const useCounter = defineStore('counter', {
+export const useCounter = defineStore("counter", {
   state: () => ({
-    counter: 0
+    counter: 0,
   }),
   getters: {
-    value: state => state.counter
+    value: (state) => state.counter,
   },
   actions: {
     increment(amout = 1) {
@@ -11,6 +11,6 @@ export const useCounter = defineStore('counter', {
     },
     decrement(amout = 1) {
       this.counter -= amout;
-    }
-  }
+    },
+  },
 });
