@@ -1,29 +1,19 @@
 <template>
-  <div class="bg-red-500">
-    {{ $t("app.title") }} <Icon name="mdi:github" />
+  <div class="flex flex-col min-h-screen">
+    <PageHeader />
 
-    <section>
-      <h2>{{ $t("app.counter.title") }}</h2>
+    <HeroBanner />
 
-      <div>{{ $t("app.counter.value") }} {{ counter.value }}</div>
+    <main class="flex-1">
+      <SectionPresentation />
 
-      <div>
-        <button type="button" @click="counter.decrement()">
-          <Icon name="mdi:minus" />
+      <SectionAbout />
 
-          {{ $t("app.counter.button.decrement") }}
-        </button>
+      <SectionProducts />
 
-        <button type="button" @click="counter.increment()">
-          <Icon name="uil:plus" />
+      <SectionContact />
+    </main>
 
-          {{ $t("app.counter.button.increment") }}
-        </button>
-      </div>
-    </section>
+    <PageFooter />
   </div>
 </template>
-
-<script lang="ts" setup>
-const counter = useCounter();
-</script>
