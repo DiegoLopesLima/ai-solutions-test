@@ -1,5 +1,5 @@
 <template>
-  <article class="py-4">
+  <article id="contact-section" class="py-4">
     <PageContainer>
       <PageTitle icon="mdi:mail">Fale conosco</PageTitle>
 
@@ -10,6 +10,7 @@
           placeholder="Digite seu nome."
           :error="errors.name"
           :touched="submited"
+          name="name"
         />
 
         <TextField
@@ -18,6 +19,7 @@
           placeholder="Digite um e-mail para entrarmos em contato."
           :error="errors.email"
           :touched="submited"
+          name="email"
         />
 
         <TextAreaField
@@ -26,6 +28,7 @@
           v-bind="message"
           :error="errors.message"
           :touched="submited"
+          name="message"
         />
 
         <div class="flex justify-end">
@@ -71,18 +74,16 @@ const email = defineComponentBinds("email");
 const message = defineComponentBinds("message");
 
 const onSubmit = handleSubmit(
-  (values) => {
-    console.group("valid");
-    console.log("values", values);
-    console.groupEnd();
-  },
-  ({ values, errors }) => {
-    submited.value = true;
+  async (values, { resetForm }) => {
+    await useFetch("/api/contact", {
+      method: "POST",
+      body: JSON.stringify(values),
+    });
 
-    console.group("invalid");
-    console.log("values", values);
-    console.log("errors", errors);
-    console.groupEnd();
+    resetForm();
+  },
+  () => {
+    submited.value = true;
   },
 );
 </script>

@@ -8,6 +8,7 @@
       v-bind="$attrs"
       :id="id"
       type="text"
+      :value="modelValue"
       :class="[
         'w-full transition-all duration-200 ease-linear bg-transparent bg-white rounded outline-none',
         variantStylesMap[normalizedVariant],
@@ -64,7 +65,7 @@ const props = withDefaults(defineProps<TextFieldProps>(), {
   touched: false,
 });
 
-const { label, error, size, variant, touched } = toRefs(props);
+const { label, error, size, variant, touched, modelValue } = toRefs(props);
 
 const hasError = computed(() => touched.value && error?.value);
 const normalizedVariant = computed(() =>
