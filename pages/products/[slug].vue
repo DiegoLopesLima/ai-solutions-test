@@ -5,7 +5,7 @@
 
       <h2 class="text-xl font-bold text-[#004a52]">Lorem ipsum</h2>
 
-      <div class="text-justify columns-2">
+      <div class="text-justify md:columns-2">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
         expedita officia temporibus iste eligendi. Accusamus dolorem facere illo
         doloremque. Assumenda fugit magni delectus molestias voluptatibus
