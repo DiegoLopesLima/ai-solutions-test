@@ -1,14 +1,16 @@
 <template>
   <div>
-    <div>
+    <ClientOnly>
       <div>
-        <img src="~assets/images/hero-banner-1.jpg" alt="" />
-      </div>
+        <div>
+          <img src="~assets/images/hero-banner-1.jpg" alt="" />
+        </div>
 
-      <div class="hidden">
-        <img src="~assets/images/hero-banner-2.jpg" alt="" />
+        <div class="hidden">
+          <img src="~assets/images/hero-banner-2.jpg" alt="" />
+        </div>
       </div>
-    </div>
+    </ClientOnly>
 
     <section class="px-2 pb-10 lg:px-20">
       <h2 class="sr-only">Introdução</h2>
