@@ -5,6 +5,18 @@
         {{ $t("pageIndex.sectionContact.title") }}
       </PageTitle>
 
+      <Alert v-if="hasSuccess" class="mb-4" variant="success">
+        <Icon name="mdi:check" size="1.4em" />
+
+        Mensagem enviada com sucesso. Aguarde nosso retorno no e-mail informado.
+      </Alert>
+
+      <Alert v-else-if="hasError" class="mb-4" variant="error">
+        <Icon name="mdi:error" size="1.4em" />
+
+        Mensagem enviada com sucesso. Aguarde nosso retorno no e-mail informado.
+      </Alert>
+
       <form class="flex flex-col max-w-3xl gap-4 mx-auto" @submit="onSubmit">
         <TextField
           :label="$t('pageIndex.sectionContact.form.control.name.label')"
@@ -13,7 +25,7 @@
             $t('pageIndex.sectionContact.form.control.name.placeholder')
           "
           :error="errors.name"
-          :touched="submited"
+          :touched="hasSubmited"
           name="name"
         />
 
@@ -24,7 +36,7 @@
             $t('pageIndex.sectionContact.form.control.email.placeholder')
           "
           :error="errors.email"
-          :touched="submited"
+          :touched="hasSubmited"
           name="email"
         />
 
@@ -35,7 +47,7 @@
           "
           v-bind="message"
           :error="errors.message"
-          :touched="submited"
+          :touched="hasSubmited"
           name="message"
         />
 
@@ -75,23 +87,35 @@ const { handleSubmit, errors, defineComponentBinds } = useForm({
   },
 });
 
-const submited = ref(false);
+const hasSubmited = ref(false);
+const hasError = ref(false);
+const hasSuccess = ref(false);
 
 const name = defineComponentBinds("name");
 const email = defineComponentBinds("email");
 const message = defineComponentBinds("message");
 
 const onSubmit = handleSubmit(
-  async (values, { resetForm }) => {
-    await useFetch("/api/contact", {
+  (values, { resetForm }) => {
+    useFetch("/api/contact", {
       method: "POST",
       body: JSON.stringify(values),
-    });
+      onRequestError(error) {
+        hasSuccess.value = false;
+        hasError.value = true;
 
-    resetForm();
+        console.error("[ai-solutions] Error trying to send message.", error);
+      },
+      onResponse() {
+        resetForm();
+
+        hasError.value = false;
+        hasSuccess.value = true;
+      },
+    });
   },
   () => {
-    submited.value = true;
+    hasSubmited.value = true;
   },
 );
 </script>
