@@ -15,6 +15,14 @@
         <div
           class="flex flex-col items-center gap-8 lg:flex-row lg:items-center lg:justify-between"
         >
+          <NuxtLink to="/">
+            <img
+              src="~assets/images/header-logo.png"
+              alt=""
+              class="w-14 lg:w-40"
+            />
+          </NuxtLink>
+
           <Button
             variant="ghost"
             aria-label="Alternar menu"
@@ -25,14 +33,6 @@
 
             {{ $t("pageIndex.nav.title") }}
           </Button>
-
-          <NuxtLink to="/">
-            <img
-              src="~assets/images/header-logo.png"
-              alt=""
-              class="w-14 lg:w-40"
-            />
-          </NuxtLink>
 
           <NavMenu />
         </div>

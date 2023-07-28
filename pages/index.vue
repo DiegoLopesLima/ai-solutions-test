@@ -1,10 +1,8 @@
 <template>
-  <div class="flex flex-col min-h-screen">
-    <PageHeader />
-
+  <main>
     <HeroBanner />
 
-    <main class="flex-1">
+    <div class="flex-1">
       <SectionPresentation />
 
       <SectionAbout />
@@ -12,10 +10,8 @@
       <SectionProducts />
 
       <SectionContact />
-    </main>
-
-    <PageFooter />
-  </div>
+    </div>
+  </main>
 </template>
 
 <script lang="ts" setup>

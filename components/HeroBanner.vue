@@ -46,14 +46,13 @@
           <div
             class="absolute flex justify-center -translate-x-1/2 left-1/2 -bottom-5"
           >
-            <button
-              type="button"
-              class="inline-flex items-center gap-2 px-4 py-2 text-white bg-[#00848c] rounded-sm"
+            <NuxtLink
+              :to="`/products/${content.id}`"
+              class="inline-flex items-center gap-2 px-4 py-2 transition-colors text-white bg-[#059e9c] rounded-sm hover:bg-[#00848c] active:bg-[#004a52]"
             >
               {{ $t("pageIndex.heroBanner.button.more") }}
-
               <Icon name="mdi:more" />
-            </button>
+            </NuxtLink>
           </div>
         </div>
       </div>
