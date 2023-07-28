@@ -8,7 +8,7 @@ Apenas para demonstrar um pouco mais do uso da Composition API.
 
 ---
 
-### Por que não utilizei um framwork de UI como o Vuetify?
+### Por que não utilizei um framework de UI como o Vuetify?
 
 Simplemente para demonstrar construção de componentes, posso utilizar qualquer framework de UI mas também posso criar meus próprios componentes quando necessário.
 
@@ -16,7 +16,7 @@ Simplemente para demonstrar construção de componentes, posso utilizar qualquer
 
 ### Por que fiz o hero banner sem utilizar um componente pronto?
 
-Sei que eu poderia ter utilizado algum componente pronto de alguma biblioteca, porém quis demonstrar como eu lidaria com isso sem um componente pronto. Assim demonstrei a preocupação em destruir timers para evitar memory leaks por exemplo.
+Sei que eu poderia ter utilizado algum componente pronto de alguma biblioteca, porém quis demonstrar como eu lidaria com isso sem um componente pronto. Assim demonstrei a preocupação em destruir timers para evitar memory leaks por exemplo ou em adotar uma constante para os milissegundos evitando um número mágico.
 
 ---
 
@@ -32,7 +32,7 @@ Para garantir escalabilidade. No futuro se eu precisasse de um botão menor (`"s
 
 ---
 
-### O que eu fiz de interessante?
+### O que eu fiz e pode ser relevante?
 
 - Implementei i18n para conseguir disponibilizar todo o conteúdo estático em mais de um idioma e estruturei de uma forma escalável.
 - O layout é responsívo.
@@ -56,12 +56,12 @@ Para garantir escalabilidade. No futuro se eu precisasse de um botão menor (`"s
 - Ajustes no contraste de cores para tornar mais acessível para dautônicos ou pessoas com dificuldades visuais.
 - Implementar um móduto para melhorar a performance das imagens grandes como a do hero banner.
 - Um dropdown para alternar entre os idiomas disponíveis.
-- Criaria um layout com o cabeçalho e rodapé para reaproveitar em mais rotas para um detalhamento dos produtos por exemplo.
 - Implementaria um mapa estático com a API do Google Maps para o endereço.
 - Implementaria um WYSIWYG para o campo de mensagem na parte de contato para que o usuário pudesse formatar a mensagem.
 - Adicionaria a possibilidade de incluir anexo nas mensagens de contato.
 - Enviaria cada Pull Request para code review.
 - Implementaria o Husky para evitar que commits fora de padrão fossem enviados.
+- Ajustaria melhor o hero banner para ocupar apenas até o viewport nos dispositivos maiores e criaria uma seta animada estimulando o usuário à ir para o próximo conteúdo do site.
 
 ---
 
