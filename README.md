@@ -2,6 +2,10 @@
 
 ## Sobre o teste
 
+### Se você estiver vendo erros no Devtools
+
+Caso esteja vendo alguns erros no devtools, eles são do vídeo do YouTube que foi adicionado, e não das minhas implementações (Principalmente caso esteja usando uma extensão de add block).
+
 ### Por que não utilizei os componentes prontos do VeeValidade?
 
 Apenas para demonstrar um pouco mais do uso da Composition API.
@@ -45,6 +49,7 @@ Para garantir escalabilidade. No futuro se eu precisasse de um botão menor (`"s
 - Apesar de eu ter trabalhado sozinho, tentei seguir dentro do possível um Git Flow, sempre criando feature branches, pull requests e fazendo pelo menos um self code review para a branch main ao invés de commits diretos.
 - Utilizei ESLint e Prettier para garantir a legibilidade e o padrão do código.
 - Utilizei um módulo do Nuxt 3 para utilizar o CDN do Google Fonts.
+- Apesar de a implementação ser pequena, utilizei o Pinia para gerenciamento de estado.
 
 ---
 
