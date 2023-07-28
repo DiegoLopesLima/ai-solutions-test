@@ -1,16 +1,28 @@
 <template>
   <div>
-    <ClientOnly>
-      <div>
-        <div>
-          <img src="~assets/images/hero-banner-1.jpg" alt="" />
-        </div>
+    <div class="relative aspect-video">
+      <div
+        v-for="(image, index) in images"
+        :key="image.id"
+        :class="[
+          'flex justify-center items-center absolute top-0 left-0 w-full h-full transition-opacity duration-1000 opacity-0 bg-center bg-cover',
+          {
+            'opacity-100': index === currentImageIndex,
+          },
+        ]"
+        :style="{ backgroundImage: `url(${image.src})` }"
+      >
+        <PageContainer class="grid grid-cols-2">
+          <div class="flex flex-col gap-2 text-justify lg:gap-4">
+            <div class="text-lg md:text-3xl lg:text-7xl text-[#004a52]">
+              {{ image.title }}
+            </div>
 
-        <div class="hidden">
-          <img src="~assets/images/hero-banner-2.jpg" alt="" />
-        </div>
+            <div class="text-sm md:text-lg">{{ image.body }}</div>
+          </div>
+        </PageContainer>
       </div>
-    </ClientOnly>
+    </div>
 
     <section class="px-2 pb-10 lg:px-20">
       <h2 class="sr-only">{{ $t("pageIndex.heroBanner.title") }}</h2>
@@ -71,4 +83,34 @@ const contents = reactive([
     ),
   },
 ]);
+
+const images = reactive([
+  {
+    id: "1",
+    src: "/images/hero-banner-1.jpg",
+    title: "Lorem ipsum",
+    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  },
+  {
+    id: "2",
+    src: "/images/hero-banner-2.jpg",
+    title: "Lorem ipsum",
+    body: "Vitae dolores corporis? Voluptas itaque, ratione ut sed quod rem dolorem molestias doloribus!",
+  },
+]);
+
+const duration = 5000;
+const currentImageIndex = ref(0);
+
+const interval = setInterval(() => {
+  if (images.length - 1 === currentImageIndex.value) {
+    currentImageIndex.value = 0;
+  } else {
+    currentImageIndex.value += 1;
+  }
+}, duration);
+
+onUnmounted(() => {
+  clearInterval(interval);
+});
 </script>
