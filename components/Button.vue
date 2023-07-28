@@ -12,7 +12,7 @@
 </template>
 
 <script lang="ts" setup>
-type ButtonVariant = "default";
+type ButtonVariant = "default" | "ghost";
 
 type ButtonSize = "md";
 
@@ -24,6 +24,7 @@ type ButtonProps = {
 
 const variantStylesMap: Record<ButtonVariant, string> = {
   default: "bg-blue-500 text-white hover:bg-blue-600 active:bg-blue-700",
+  ghost: "bg-transparent text-blue-500",
 };
 
 const sizeStylesMap: Record<ButtonSize, string> = {

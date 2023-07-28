@@ -12,9 +12,26 @@
 
     <div class="py-4">
       <PageContainer>
-        <div class="flex items-center justify-between">
+        <div
+          class="flex flex-col items-center gap-8 lg:flex-row lg:items-center lg:justify-between"
+        >
+          <Button
+            variant="ghost"
+            aria-label="Alternar menu"
+            class="lg:hidden"
+            @click="menu.toggle()"
+          >
+            <Icon name="mdi:menu" size="1.4em" />
+
+            Menu
+          </Button>
+
           <NuxtLink to="/">
-            <img src="~assets/images/header-logo.png" width="160" alt="" />
+            <img
+              src="~assets/images/header-logo.png"
+              alt=""
+              class="w-14 lg:w-40"
+            />
           </NuxtLink>
 
           <NavMenu />
@@ -27,3 +44,9 @@
     ></div>
   </header>
 </template>
+
+<script lang="ts" setup>
+import { useMenu } from "@/stores/menu";
+
+const menu = useMenu();
+</script>
