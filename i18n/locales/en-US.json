@@ -1,13 +1,98 @@
 {
-  "app": {
-    "title": "Hello world!",
-    "counter": {
-      "title": "Counter",
-      "value": "Value:",
-      "button": {
-        "increment": "Increment",
-        "decrement": "Decrement"
+  "pageIndex": {
+    "title": "AI Solutions",
+    "nav": {
+      "title": "Menu",
+      "item": {
+        "home": "Home",
+        "about": "About Us",
+        "products": "Products",
+        "contact": "Contact Us"
       }
+    },
+    "socialMedia": {
+      "title": "Social Media",
+      "item": {
+        "facebook": "Facebook",
+        "linkedin": "LinkedIn",
+        "instagram": "Instagram"
+      }
+    },
+    "heroBanner": {
+      "title": "Introduction",
+      "content": {
+        "naturalLanguage": {
+          "title": "Natural Language Processing",
+          "description": "Natural Language Processing (NLP) is a subfield of Artificial Intelligence (AI) that studies the capability and limitations of machines in understanding human language. The goal is to provide computers with the ability to comprehend and compose texts. Our AI solutions utilize this technology to automatically extract essential business insights and emerging trends from vast amounts of structured and unstructured content."
+        },
+        "computationalVision": {
+          "title": "Computational Vision",
+          "description": "Computational Vision is a relatively new subject closely related to machine learning. Also known as computer vision, it is the area of science that develops theories and methods for the automatic extraction of useful information from images, with the aim of creating and conveying this information in a comprehensible manner. Our AI solutions use computational vision to accelerate intelligent automation with straightforward image processing, recognition, and detection tools."
+        },
+        "predictionAndOptimization": {
+          "title": "Prediction and Optimization",
+          "description": "Prediction aids in foreseeing future outcomes, while Optimization provides the best results even with resource constraints. AI supports all stages of the prediction and optimization workflow, enabling large-scale automation to predict outcomes and optimize decisions."
+        }
+      },
+      "button": {
+        "more": "Learn More"
+      }
+    },
+    "sectionPresentation": {
+      "video": {
+        "alt": "YouTube Video about AI"
+      }
+    },
+    "sectionAbout": {
+      "title": "About Us",
+      "subtitle": "Experience in What We Do",
+      "content": "AiSolutions is a company focused on developing technological solutions with artificial intelligence and machine learning, through data and information extraction, structuring, and validation. This provides its clients with security, legality, and procedural aspects of information. We offer AI solutions that include learning tools to enhance results and consolidated recommendations for intelligent decision-making."
+    },
+    "sectionProducts": {
+      "title": "Products"
+    },
+    "sectionContact": {
+      "title": "Contact Us",
+      "form": {
+        "control": {
+          "name": {
+            "label": "Name",
+            "placeholder": "Enter your name."
+          },
+          "email": {
+            "label": "Email",
+            "placeholder": "Enter your email."
+          },
+          "message": {
+            "label": "Message",
+            "placeholder": "Enter your message for AI Solutions."
+          }
+        },
+        "button": {
+          "submit": "Submit"
+        }
+      }
+    },
+    "footer": {
+      "address": {
+        "title": "Address",
+        "content": {
+          "title": "Centro Empresarial Parque Brasília",
+          "street": "SIG, quadra 1, lote 985, sala 120, 70610-410",
+          "state": "Brasília - DF"
+        }
+      },
+      "telephones": {
+        "title": "Telephones",
+        "content": {
+          "primary": "+55 (61) 3222-7243",
+          "secondary": "+55 (61) 9 9594-6409"
+        }
+      },
+      "email": {
+        "title": "Email"
+      },
+      "copyRight": "AI Solutions © 2023 - All rights reserved."
     }
   }
 }

@@ -1,30 +1,38 @@
 <template>
   <article id="contact-section" class="py-4">
     <PageContainer>
-      <PageTitle icon="mdi:mail">Fale conosco</PageTitle>
+      <PageTitle icon="mdi:mail">
+        {{ $t("pageIndex.sectionContact.title") }}
+      </PageTitle>
 
       <form class="flex flex-col max-w-3xl gap-4 mx-auto" @submit="onSubmit">
         <TextField
-          label="Nome"
+          :label="$t('pageIndex.sectionContact.form.control.name.label')"
           v-bind="name"
-          placeholder="Digite seu nome."
+          :placeholder="
+            $t('pageIndex.sectionContact.form.control.name.placeholder')
+          "
           :error="errors.name"
           :touched="submited"
           name="name"
         />
 
         <TextField
-          label="E-mail"
+          :label="$t('pageIndex.sectionContact.form.control.email.label')"
           v-bind="email"
-          placeholder="Digite um e-mail para entrarmos em contato."
+          :placeholder="
+            $t('pageIndex.sectionContact.form.control.email.placeholder')
+          "
           :error="errors.email"
           :touched="submited"
           name="email"
         />
 
         <TextAreaField
-          label="Mensagem"
-          placeholder="Digite sua mensagem."
+          :label="$t('pageIndex.sectionContact.form.control.message.label')"
+          :placeholder="
+            $t('pageIndex.sectionContact.form.control.message.placeholder')
+          "
           v-bind="message"
           :error="errors.message"
           :touched="submited"
@@ -35,7 +43,7 @@
           <Button type="submit">
             <Icon name="mdi:send" />
 
-            Enviar
+            {{ $t("pageIndex.sectionContact.form.button.submit") }}
           </Button>
         </div>
       </form>

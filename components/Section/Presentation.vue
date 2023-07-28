@@ -7,7 +7,7 @@
         <iframe
           class="w-full lg:w-2/3 aspect-video"
           src="https://www.youtube.com/embed/tW2hH-pdAto"
-          title="YouTube video player"
+          :title="$t('pageIndex.sectionPresentation.video.alt')"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen

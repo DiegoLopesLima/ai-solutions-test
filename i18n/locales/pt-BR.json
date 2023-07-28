@@ -1,13 +1,98 @@
 {
-  "app": {
-    "title": "Olá mundo!",
-    "counter": {
-      "title": "Contador",
-      "value": "Valor:",
-      "button": {
-        "increment": "Incrementar",
-        "decrement": "Decrementar"
+  "pageIndex": {
+    "title": "AI Solutions",
+    "nav": {
+      "title": "Menu",
+      "item": {
+        "home": "Início",
+        "about": "Sobre nós",
+        "products": "Produtos",
+        "contact": "Fale conosco"
       }
+    },
+    "socialMedia": {
+      "title": "Redes sociais",
+      "item": {
+        "facebook": "Facebook",
+        "linkedin": "LinkedIn",
+        "instagram": "Instagram"
+      }
+    },
+    "heroBanner": {
+      "title": "Introdução",
+      "content": {
+        "naturalLanguage": {
+          "title": "Processamento de linguagem natural",
+          "description": "O Processamento de Linguagem Natural (PLN) é a subárea da Artificial intelligence (AI) que estuda a capacidade e as limitações de uma máquina em entender a linguagem dos seres humanos. O objetivo é fornecer aos computadores a capacidade de entender e compor textos. Nossas soluções de AI utilizam esta solução para extrair automaticamente insights de negócios essenciais e tendências emergentes de grandes quantidades de conteúdo estruturado e não estruturado."
+        },
+        "computationalVision": {
+          "title": "Visão computacional",
+          "description": "Visão computacional é um assunto consideravelmente novo e totalmente conectado com o aprendizado de máquina “machine learning”. Este conceito também é conhecido como visão por computador, é a área da ciência que desenvolve teorias e métodos voltados à extração automática de informações úteis contidas em imagens, com objetivo de criar e transmitir essas informações de forma compreensível. Nossas soluções de AI utilizam visão computacional para acelerar automação inteligente com ferramentas simples de processamento, reconhecimento e detecção de imagens."
+        },
+        "predictionAndOptimization": {
+          "title": "Previsão e otimização",
+          "description": "O prognóstico auxilia a antever resultados futuros, já a Otimização proporciona os melhores resultados mesmo com restrições de recursos. A AI oferece suporte a todos os estágios de fluxo de trabalho de prognóstico e otimização, habilitando automação em larga escala para prever resultados e otimizar decisões."
+        }
+      },
+      "button": {
+        "more": "Saiba mais"
+      }
+    },
+    "sectionPresentation": {
+      "video": {
+        "alt": "Vídeo do YouTube sobre IA"
+      }
+    },
+    "sectionAbout": {
+      "title": "Sobre nós",
+      "subtitle": "Experiência no que fazemos",
+      "content": "A AiSolutions é uma empresa focada no desenvolvimento de soluções tecnológicas com inteligência artificial e machine Learning, através da extração, estruturação e convalidação de base da dados e informações, proporcionando assim aos seus clientes, segurança, legalidade e processualidade das informações. Proporcionamos para as organizações soluções de AI, que incluem ferramentas de aprendizagem que aprimoram os resultados e recomendações consolidadas para tomada de decisões inteligentes."
+    },
+    "sectionProducts": {
+      "title": "Produtos"
+    },
+    "sectionContact": {
+      "title": "Fale conosco",
+      "form": {
+        "control": {
+          "name": {
+            "label": "Nome",
+            "placeholder": "Digite seu nome."
+          },
+          "email": {
+            "label": "E-mail",
+            "placeholder": "Digite seu e-mail."
+          },
+          "message": {
+            "label": "Mensagem",
+            "placeholder": "Digite sua mensagem para a AI Solutions."
+          }
+        },
+        "button": {
+          "submit": "Enviar"
+        }
+      }
+    },
+    "footer": {
+      "address": {
+        "title": "Endereço",
+        "content": {
+          "title": "Centro Empresarial Parque Brasília",
+          "street": "SIG, quadra 1, lote 985, sala 120, 70610-410",
+          "state": "Brasília - DF"
+        }
+      },
+      "telephones": {
+        "title": "Telefones",
+        "content": {
+          "primary": "+55 (61) 3222-7243",
+          "secondary": "+55 (61) 9 9594-6409"
+        }
+      },
+      "email": {
+        "title": "E-mail"
+      },
+      "copyRight": "AI Solutions © 2023 - Todos os direitos reservados"
     }
   }
 }
