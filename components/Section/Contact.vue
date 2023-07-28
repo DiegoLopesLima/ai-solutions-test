@@ -104,7 +104,7 @@ const onSubmit = handleSubmit(
         hasSuccess.value = false;
         hasError.value = true;
 
-        console.error("[ai-solutions] Error trying to send message.", error);
+        throw error;
       },
       onResponse() {
         resetForm();
