@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@pinia/nuxt",
     "nuxt-icon",
+    "@vee-validate/nuxt",
   ],
   css: ["~/assets/styles/global.scss"],
   imports: {
