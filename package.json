@@ -30,6 +30,10 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.4.11"
+    "@pinia/nuxt": "^0.4.11",
+    "@vee-validate/nuxt": "^4.10.8",
+    "@vee-validate/zod": "^4.10.8",
+    "vee-validate": "^4.10.8",
+    "zod": "^3.21.4"
   }
 }
