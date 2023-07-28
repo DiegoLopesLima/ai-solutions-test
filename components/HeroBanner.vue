@@ -14,7 +14,7 @@
       <h2 class="sr-only">Introdução</h2>
 
       <div
-        class="relative z-10 grid gap-8 -mt-10 md:grid-cols-2 xl:grid-cols-3"
+        class="relative z-10 grid gap-8 mx-auto -mt-10 md:grid-cols-2 xl:grid-cols-3 xl:max-w-7xl"
       >
         <div
           v-for="content in contents"
