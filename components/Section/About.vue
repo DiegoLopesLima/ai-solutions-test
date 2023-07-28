@@ -3,10 +3,10 @@
     <PageContainer>
       <PageTitle icon="mdi:information">Sobre nós</PageTitle>
 
-      <div>Experiência no que fazemos</div>
+      <h3 class="mb-4 text-lg font-semibold">Experiência no que fazemos</h3>
 
-      <div>
-        <p>
+      <div class="gap-8 text-justify md:columns-2">
+        <p class="mb-4 md:mb-0">
           A AiSolutions é uma empresa focada no desenvolvimento de soluções
           tecnológicas com inteligência artificial e machine Learning, através
           da extração, estruturação e convalidação de base da dados e
