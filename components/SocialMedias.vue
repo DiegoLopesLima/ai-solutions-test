@@ -4,7 +4,7 @@
 
     <div class="flex items-center">
       <NuxtLink
-        class="inline-flex"
+        class="inline-flex transition-colors hover:text-red-500"
         to="https://www.facebook.com/Ai-Solutions-101748418331072"
         target="_blank"
         :aria-label="$t('pageIndex.socialMedia.item.facebook')"
@@ -15,7 +15,7 @@
 
     <div class="flex items-center">
       <NuxtLink
-        class="inline-flex"
+        class="inline-flex transition-colors hover:text-red-500"
         to="https://www.instagram.com/aisolutions.tec/"
         target="_blank"
         :aria-label="$t('pageIndex.socialMedia.item.instagram')"
@@ -26,7 +26,7 @@
 
     <div class="flex items-center">
       <NuxtLink
-        class="inline-flex"
+        class="inline-flex transition-colors hover:text-red-500"
         to="https://www.linkedin.com/company/aisolutions-tec/"
         target="_blank"
         :aria-label="$t('pageIndex.socialMedia.item.linkedin')"

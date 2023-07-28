@@ -56,10 +56,9 @@
 
     <div class="py-2 bg-[#00848c]">
       <PageContainer class="text-center md:text-left">
-        <small
-          >AI Solutions © <time datetime="2023">2023</time> - Todos os direitos
-          reservados</small
-        >
+        <small>
+          {{ $t("pageIndex.footer.copyRight") }}
+        </small>
       </PageContainer>
     </div>
   </footer>

@@ -23,7 +23,7 @@
       <li>
         <NuxtLink
           class="flex items-center gap-2 py-2 font-semibold hover:underline"
-          :to="{ hash: '#about-section' }"
+          :to="{ hash: '#about-section', path: '/' }"
         >
           <Icon name="mdi:information" size="1.4em" />
 
@@ -34,7 +34,7 @@
       <li>
         <NuxtLink
           class="flex items-center gap-2 py-2 font-semibold hover:underline"
-          :to="{ hash: '#products-section' }"
+          :to="{ hash: '#products-section', path: '/' }"
         >
           <Icon name="mdi:apps" size="1.4em" />
 
@@ -45,7 +45,7 @@
       <li>
         <NuxtLink
           class="flex items-center gap-2 py-2 font-semibold hover:underline"
-          :to="{ hash: '#contact-section' }"
+          :to="{ hash: '#contact-section', path: '/' }"
         >
           <Icon name="mdi:mail" size="1.4em" />
 
