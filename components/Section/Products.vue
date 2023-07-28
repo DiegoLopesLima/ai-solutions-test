@@ -1,7 +1,9 @@
 <template>
   <article id="products-section" class="py-4">
     <PageContainer>
-      <PageTitle icon="mdi:apps">Produtos</PageTitle>
+      <PageTitle icon="mdi:apps">{{
+        $t("pageIndex.sectionProducts.title")
+      }}</PageTitle>
 
       <div
         class="flex flex-wrap gap-4 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"

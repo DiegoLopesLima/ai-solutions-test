@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h1 class="sr-only">AI Solutions</h1>
+    <h1 class="sr-only">{{ $t("pageIndex.title") }}</h1>
 
     <div class="bg-[#004a52] text-white py-2 h-9">
       <PageContainer>
@@ -23,7 +23,7 @@
           >
             <Icon name="mdi:menu" size="1.4em" />
 
-            Menu
+            {{ $t("pageIndex.nav.title") }}
           </Button>
 
           <NuxtLink to="/">

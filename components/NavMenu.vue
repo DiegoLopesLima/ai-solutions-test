@@ -16,7 +16,7 @@
         >
           <Icon name="mdi:home" size="1.4em" />
 
-          Início
+          {{ $t("pageIndex.nav.item.home") }}
         </NuxtLink>
       </li>
 
@@ -27,7 +27,7 @@
         >
           <Icon name="mdi:information" size="1.4em" />
 
-          Sobre nós
+          {{ $t("pageIndex.nav.item.about") }}
         </NuxtLink>
       </li>
 
@@ -38,7 +38,7 @@
         >
           <Icon name="mdi:apps" size="1.4em" />
 
-          Produtos
+          {{ $t("pageIndex.nav.item.products") }}
         </NuxtLink>
       </li>
 
@@ -49,7 +49,7 @@
         >
           <Icon name="mdi:mail" size="1.4em" />
 
-          Fale conosco
+          {{ $t("pageIndex.nav.item.contact") }}
         </NuxtLink>
       </li>
     </ul>

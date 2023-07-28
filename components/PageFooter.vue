@@ -6,17 +6,15 @@
           <h2 class="flex items-center gap-1 mb-4 font-bold">
             <Icon name="mdi:map-marker" />
 
-            Endereço
+            {{ $t("pageIndex.footer.address.title") }}
           </h2>
 
           <address class="not-italic">
-            <div>Centro Empresarial Parque Brasília</div>
+            <div>{{ $t("pageIndex.footer.address.content.title") }}</div>
 
-            <div>SIG, quadra 1, lote 985, sala 120</div>
+            <div>{{ $t("pageIndex.footer.address.content.street") }}</div>
 
-            <div>CEP: 70610-410</div>
-
-            <div>Brasília, DF</div>
+            <div>{{ $t("pageIndex.footer.address.content.state") }}</div>
           </address>
         </section>
 
@@ -24,19 +22,19 @@
           <h2 class="flex items-center gap-1 mb-4 font-bold">
             <Icon name="mdi:phone" />
 
-            Telefones
+            {{ $t("pageIndex.footer.telephones.title") }}
           </h2>
 
           <div>
-            <NuxtLink to="tel:+556132227243" target="_blank"
-              >+55 (61) 3222-7243</NuxtLink
-            >
+            <NuxtLink to="tel:+556132227243" target="_blank">
+              {{ $t("pageIndex.footer.telephones.content.primary") }}
+            </NuxtLink>
           </div>
 
           <div>
-            <NuxtLink to="tel:+5561995946409" target="_blank"
-              >+55 (61) 9 9594-6409</NuxtLink
-            >
+            <NuxtLink to="tel:+5561995946409" target="_blank">
+              {{ $t("pageIndex.footer.telephones.content.secondary") }}
+            </NuxtLink>
           </div>
         </section>
 
@@ -44,13 +42,13 @@
           <h2 class="flex items-center gap-1 mb-4 font-bold">
             <Icon name="mdi:mail" />
 
-            E-mail
+            {{ $t("pageIndex.footer.email.title") }}
           </h2>
 
           <div>
-            <NuxtLink to="mailto:contato@aisolutions.tec.br"
-              >contato@aisolutions.tec.br</NuxtLink
-            >
+            <NuxtLink to="mailto:contato@aisolutions.tec.br">
+              contato@aisolutions.tec.br
+            </NuxtLink>
           </div>
         </section>
       </PageContainer>
