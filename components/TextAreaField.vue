@@ -8,6 +8,7 @@
       v-bind="$attrs"
       :id="id"
       type="text"
+      :value="modelValue"
       :class="[
         'w-full h-40 transition-all duration-200 ease-linear bg-transparent bg-white rounded outline-none',
         variantStylesMap[normalizedVariant],

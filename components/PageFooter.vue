@@ -1,7 +1,7 @@
 <template>
   <footer class="text-white border-t-2 border-[#004a52]">
     <div class="py-8 bg-[#059e9c]">
-      <PageContainer class="grid grid-cols-3 gap-8">
+      <PageContainer class="flex flex-col gap-8 md:grid md:grid-cols-3">
         <section>
           <h2 class="flex items-center gap-1 mb-4 font-bold">
             <Icon name="mdi:map-marker" />
@@ -57,7 +57,7 @@
     </div>
 
     <div class="py-2 bg-[#00848c]">
-      <PageContainer>
+      <PageContainer class="text-center md:text-left">
         <small
           >AI Solutions © <time datetime="2023">2023</time> - Todos os direitos
           reservados</small

@@ -1,5 +1,5 @@
 <template>
-  <article class="py-4">
+  <article id="about-section" class="py-4">
     <PageContainer>
       <PageTitle icon="mdi:information">Sobre nós</PageTitle>
 
